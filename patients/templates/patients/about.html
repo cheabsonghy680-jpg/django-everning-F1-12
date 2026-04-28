@@ -1,5 +1,28 @@
 {% extends "patients/base.html" %} {% block content %}
 
-<h1>This is about page</h1>
+<h1>This is about</h1>
+<table>
+  <tr>
+    <td>ID</td>
+    <td>Name</td>
+    <td>Age</td>
+    <td>Sex</td>
+    <td>City</td>
+    <td>Job</td>
+    <td>Salary</td>
+  </tr>
+
+  {% for people in peoples %}
+  <tr>
+    <td>{{people.id}}</td>
+    <td>{{people.name}}</td>
+    <td>{{people.age}}</td>
+    <td>{{people.sex}}</td>
+    <td>{{people.city}}</td>
+    <td>{{people.job}}</td>
+    <td>{{people.salary}}</td>
+  </tr>
+  {% endfor %}
+</table>
 
 {% endblock %}

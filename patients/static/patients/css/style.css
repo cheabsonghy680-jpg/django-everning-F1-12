@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -5,24 +7,28 @@
 }
 
 body {
-  background-color: aqua;
+  background-color: whitesmoke;
+  font-family: "Roboto", sans-serif;
 }
 
 .container {
-  background-color: antiquewhite;
+  background-color: white;
+  /* padding: 0px 10px; */
   width: 80%;
   margin: auto;
+  height: 100vh;
+  overflow-y: auto;
 }
 ul {
   display: flex;
   flex-direction: row;
-  width: 500px;
+  width: 100%;
   background-color: black;
   color: white;
 }
 ul li {
   list-style: none;
-  padding: 10px 15px;
+  padding: 15px 20px;
 }
 ul li:hover {
   background-color: blue;
@@ -31,4 +37,15 @@ ul li:hover {
 ul li a {
   text-decoration: none;
   color: white;
+}
+table {
+  width: 80%;
+  margin: auto;
+  border: 1px solid black;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+table tr td {
+  padding: 5px 10px;
+  border: 1px solid black;
 }
