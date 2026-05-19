@@ -77,7 +77,7 @@ WSGI_APPLICATION = 'hospital_management.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'clinic_evening',
+        'NAME': 'smc_f1-12',
         'USER':'root',
         'PASSWORD':'root',
         'HOST':'localhost',
